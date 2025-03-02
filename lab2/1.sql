@@ -18,28 +18,29 @@ INSERT INTO employees VALUES (1007, 'Olivia Garcia', 55000, 'lect', 'IT');
 COMMIT;
 
 
-SELECT * FROM employees;
 
 -- PL/SQL block: write and exicute a stored procedure that gives 10% salary increase to prof
-
+DROP PROCEDURE INCREASE_SALARY;
 CREATE OR REPLACE PROCEDURE INCREASE_SALARY(p_emp_id in employees.employee_id%TYPE, P_emp_salary_percent IN NUMBER) AS
+
 BEGIN
     UPDATE EMPLOYEES
     SET SALARY = SALARY + (SALARY * P_emp_salary_percent / 100)
     WHERE EMPLOYEE_ID = p_emp_id;
 END;
+/
 
-
+-- Exicute the procedure
 DECLARE 
     CURSOR C IS 
-        SELECT * FROM EMPLOYEES;
+        SELECT EMPLOYEE_ID, DESIGNATION FROM EMPLOYEES;
     V_EMP_ID EMPLOYEES.EMPLOYEE_ID%TYPE;
     V_EMP_DESG EMPLOYEES.DESIGNATION%TYPE;
     V_EMP_INC NUMBER ;
 BEGIN
     OPEN C;
     LOOP
-        FETCH C INTO V_EMP_ID;
+        FETCH C INTO V_EMP_ID, V_EMP_DESG;
         EXIT WHEN C%NOTFOUND;
         IF V_EMP_INC IS NULL THEN
             V_EMP_INC := 10;
@@ -50,6 +51,6 @@ BEGIN
     END LOOP;
     CLOSE C;
     COMMIT;
-
+    
 END;
 /
