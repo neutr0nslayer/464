@@ -1,3 +1,8 @@
+/*
+    Compilation of 1..10
+*/
+
+
 -- 1. Sum of First N Natural Numbers: Write a PL/SQL block that reads a number N from the user and
 -- calculates the sum of the first N natural numbers using a LOOP.
 
