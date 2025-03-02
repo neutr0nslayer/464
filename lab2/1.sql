@@ -38,13 +38,11 @@ DECLARE
     V_EMP_DESG EMPLOYEES.DESIGNATION%TYPE;
     V_EMP_INC NUMBER ;
 BEGIN
+    V_EMP_INC := 10;
     OPEN C;
     LOOP
         FETCH C INTO V_EMP_ID, V_EMP_DESG;
         EXIT WHEN C%NOTFOUND;
-        IF V_EMP_INC IS NULL THEN
-            V_EMP_INC := 10;
-        END IF;
         IF V_EMP_DESG = 'prof' THEN
             INCREASE_SALARY(V_EMP_ID, V_EMP_INC);
         END IF;
