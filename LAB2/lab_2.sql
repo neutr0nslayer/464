@@ -23,8 +23,8 @@ INSERT INTO employees VALUES (1007, 'Olivia Garcia', 55000, 'lect', 'IT');
 COMMIT;
 
 
--- 1. Retrieve Employee Data Using Cursors – Write a PL/SQL block using Explicit Cursors to retrieve
--- and display employee names and salaries.
+-- * 1. Retrieve Employee Data Using Cursors – Write a PL/SQL block using Explicit Cursors to retrieve
+-- * and display employee names and salaries.
 DECLARE
     CURSOR EMP_CURSOR IS
         SELECT NAME, SALARY FROM EMPLOYEES;
@@ -41,8 +41,9 @@ BEGIN
 CLOSE EMP_CURSOR;
 END;
 /
--- 2. Calculate Bonus Using Functions – Create a function that takes an employee ID and returns a bonus
--- amount (10% of salary).
+
+-- * 2. Calculate Bonus Using Functions – Create a function that takes an employee ID and returns a bonus
+-- * amount (10% of salary).
 
 DROP FUNCTION CALCULATE_BONUS;
 CREATE OR REPLACE FUNCTION CALCULATE_BONUS (V_EMP_ID EMPLOYEES.EMPLOYEE_ID%TYPE) RETURN EMPLOYEES.SALARY%TYPE AS
@@ -86,13 +87,41 @@ BEGIN
 CLOSE EMP_CURSOR;
 END;
 /
--- 3. Implement a Procedure for Employee Promotion – Write a stored procedure that increases an
--- employee’s salary and updates their designation.
+-- * 3. Implement a Procedure for Employee Promotion – Write a stored procedure that increases an
+-- * employee’s salary and updates their designation.
+
+DROP PROCEDURE UPDATE_SALARY_DESG;
+CREATE OR REPLACE PROCEDURE UPDATE_SALARY_DESG (V_EMP_ID EMPLOYEES.EMPLOYEE_ID%TYPE, NEW_SALARY EMPLOYEES.SALARY%TYPE, NEW_DESG EMPLOYEES.DESIGNATION%TYPE ) AS
+	
+BEGIN
+	UPDATE EMPLOYEES
+	SET DESIGNATION = NEW_DESG, SALARY = NEW_SALARY
+	WHERE EMPLOYEE_ID = V_EMP_ID;
+	COMMIT;
+END;
+/
 
 
--- 4. Handle Exceptions in Data Retrieval – Implement exception handling for cases where an employee
--- ID does not exist in the database.
+DECLARE
+	V_EMP_ID EMPLOYEES.EMPLOYEE_ID%TYPE;
+    V_DESG EMPLOYEES.DESIGNATION%TYPE;
+    V_SALARY EMPLOYEES.SALARY%TYPE;
+    
+BEGIN
+	V_EMP_ID := 1001;
+    V_DESG := 'lect';
+    V_SALARY := 10000;
+
+	UPDATE_SALARY_DESG(V_EMP_ID, V_SALARY, V_DESG) ;  
+END;
+/
+
+SELECT * FROM EMPLOYEES WHERE EMPLOYEE_ID = 1001;
 
 
--- 5. Raise Custom Errors for Business Rules – Write a procedure that checks salary conditions and raises
--- an error if the salary is below a threshold.
+-- * 4. Handle Exceptions in Data Retrieval – Implement exception handling for cases where an employee
+-- * ID does not exist in the database.
+
+
+-- * 5. Raise Custom Errors for Business Rules – Write a procedure that checks salary conditions and raises
+-- * an error if the salary is below a threshold.
