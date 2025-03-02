@@ -44,9 +44,9 @@ CLOSE EMP_CURSOR;
 END;
 /
 
+
 -- * 2. Calculate Bonus Using Functions – Create a function that takes an employee ID and returns a bonus
 -- * amount (10% of salary).
-
 DROP FUNCTION CALCULATE_BONUS;
 CREATE OR REPLACE FUNCTION CALCULATE_BONUS (V_EMP_ID EMPLOYEES.EMPLOYEE_ID%TYPE) RETURN EMPLOYEES.SALARY%TYPE AS
 
@@ -94,9 +94,10 @@ BEGIN
 	CLOSE EMP_CURSOR;
 END;
 /
+
+
 -- * 3. Implement a Procedure for Employee Promotion – Write a stored procedure that increases an
 -- * employee’s salary and updates their designation.
-
 DROP PROCEDURE UPDATE_SALARY_DESG;
 CREATE OR REPLACE PROCEDURE UPDATE_SALARY_DESG (V_EMP_ID EMPLOYEES.EMPLOYEE_ID%TYPE, NEW_SALARY EMPLOYEES.SALARY%TYPE, NEW_DESG EMPLOYEES.DESIGNATION%TYPE ) AS
 	
@@ -129,7 +130,6 @@ SELECT * FROM EMPLOYEES WHERE EMPLOYEE_ID = 1001;
 
 -- * 4. Handle Exceptions in Data Retrieval – Implement exception handling for cases where an employee
 -- * ID does not exist in the database.
-
 DECLARE
 	V_EMP_ID EMPLOYEES.EMPLOYEE_ID%TYPE;
 	V_NAME EMPLOYEES.NAME%TYPE;
@@ -146,9 +146,10 @@ EXCEPTION
 		DBMS_OUTPUT.PUT_LINE('EMPLOYEE ID DOES NOT EXIST');
 END;
 /
+
+
 -- * 5. Raise Custom Errors for Business Rules – Write a procedure that checks salary conditions and raises
 -- * an error if the salary is below a threshold.
-
 DROP PROCEDURE CHECK_SALARY;
 CREATE OR REPLACE PROCEDURE CHECK_SALARY (V_EMP_ID EMPLOYEES.EMPLOYEE_ID%TYPE) AS
     V_SALARY EMPLOYEES.SALARY%TYPE;
