@@ -12,7 +12,7 @@ CREATE TABLE departments (
   location VARCHAR2(20)
 );
 
--- Insert 100 random departments
+-- Insert 1000 random departments
 BEGIN
     FOR I IN 1..1000 LOOP 
         INSERT INTO departments VALUES (
@@ -38,7 +38,7 @@ CREATE TABLE instructors (
 );
 
 BEGIN
-    FOR I IN 1..100000 LOOP 
+    FOR I IN 1..1000000 LOOP 
         INSERT INTO instructors VALUES (
             I,
             'Instructor ' || CHR(TRUNC(DBMS_RANDOM.VALUE(65, 91))),  -- Random letter (A-Z)
@@ -59,6 +59,10 @@ EXPLAIN PLAN FOR
 SELECT  NAME FROM instructors WHERE dept_id = 10;
 SELECT * FROM TABLE(DBMS_XPLAN.DISPLAY);
 
+set timing on;
+SELECT  NAME FROM instructors WHERE dept_id = 10;
+set timing off;
+
 DROP INDEX idx_dept_id;
 CREATE INDEX idx_dept_id ON instructors(dept_id);
 
@@ -68,6 +72,12 @@ SELECT  *
 FROM instructors i 
 WHERE dept_id = 10 AND salary > 50000;
 SELECT * FROM TABLE(DBMS_XPLAN.DISPLAY);
+
+set timing on;
+SELECT  *  
+FROM instructors i 
+WHERE dept_id = 10 AND salary > 50000;
+set timing off;
 
 DROP INDEX idx_dept_id;
 CREATE INDEX idx_dept_id ON instructors(dept_id);
@@ -84,9 +94,14 @@ SELECT /*+ INDEX(i idx_dept_id) */ i.instructor_id, i.name, d.dept_name, d.locat
 FROM instructors  i
 JOIN departments d  ON i.dept_id = d.dept_id
 WHERE i.DEPT_ID = 50;
-
-
 SELECT * FROM TABLE(DBMS_XPLAN.DISPLAY);
+
+set timing on;
+SELECT /*+ INDEX(i idx_dept_id) */ i.instructor_id, i.name, d.dept_name, d.location
+FROM instructors  i
+JOIN departments d  ON i.dept_id = d.dept_id
+WHERE i.DEPT_ID = 50;
+set timing off;
 
 DROP INDEX idx_dept_id;
 CREATE INDEX idx_dept_id ON instructors(dept_id);
