@@ -22,7 +22,19 @@ begin
 end;
 /
 
-
+ACCEPT V_NUMBER NUMBER PROMPT 'ENTER THE NUMBER: ';
+DECLARE
+	V_NUMBER NUMBER;
+	V_RESULT NUMBER;
+BEGIN
+	V_RESULT := 0;
+	V_NUMBER := &V_NUMBER;
+	FOR I IN 1 .. V_NUMBER LOOP
+		V_RESULT := V_RESULT + I;
+	END LOOP;
+	DBMS_OUTPUT.PUT_LINE(V_RESULT);
+END;
+/
 -- 2. Factorial Calculation: Write a PL/SQL block to read a number N from the user and calculate the
 -- factorial of N using a FOR loop.
 
@@ -40,6 +52,20 @@ BEGIN
 END;
 /
 
+
+ACCEPT V_NUMBER NUMBER PROMPT 'ENTER THE NUMBER';
+DECLARE
+	V_NUMBER NUMBER;
+	V_RESULT NUMBER;
+BEGIN
+	V_NUMBER := &V_NUMBER;
+	V_RESULT := 1;
+	FOR I IN 1..V_NUMBER LOOP
+		V_RESULT := V_RESULT * I;
+	END LOOP;
+	DBMS_OUTPUT.PUT_LINE(V_RESULT);
+END;
+/
 
 -- 3. Even or Odd Number Check: Write a PL/SQL block that takes a number as input and checks whether
 -- it is even or odd using an IF-THEN-ELSE statement.
@@ -59,12 +85,45 @@ BEGIN
 END;
 /
 
+ACCEPT V_NUMBER NUMBER PROMPT 'ENTER THE NUMBER: ';
+DECLARE
+	V_NUMBER NUMBER;
+	V_RESULT NUMBER;
+BEGIN
+	V_NUMBER := &V_NUMBER;
+	IF MOD(V_NUMBER,2) = 0 THEN
+		DBMS_OUTPUT.PUT_LINE('EVEN');
+	ELSIF MOD(V_NUMBER,2) != 0 THEN
+		DBMS_OUTPUT.PUT_LINE('ODD');
+	END IF;
+END;
+/
+
 -- 4. Student Grade Calculation: Write a PL/SQL block that accepts a student's score and assigns a grade
 -- based on the following conditions:
 -- o 90 and above: Grade A
 -- o 80-89: Grade B
 -- o 70-79: Grade C
 -- o Below 70: Fail Use a CASE statement to implement this logic.
+
+
+
+ACCEPT V_NUMBER NUMBER PROMPT 'ENTER A VALUE: ';
+DECLARE
+    V_NUMBER NUMBER;
+BEGIN
+    V_NUMBER :=  &V_NUMBER;
+    IF V_NUMBER >= 90 THEN
+        DBMS_OUTPUT.PUT_LINE('A');
+    ELSIF V_NUMBER <=89 AND V_NUMBER >=80 THEN
+        DBMS_OUTPUT.PUT_LINE('B');
+    ELSIF V_NUMBER <=79 AND V_NUMBER >=70 THEN
+        DBMS_OUTPUT.PUT_LINE('C');
+    ELSIF V_NUMBER<70 THEN 
+        DBMS_OUTPUT.PUT_LINE('F');
+    END IF;
+END;
+/
 
 SET SERVEROUTPUT ON
 ACCEPT v_number NUMBER PROMPT 'Enter a number: ';
@@ -89,6 +148,21 @@ END;
 
 -- 5. Reverse a Number Using WHILE Loop: Write a PL/SQL block that reads a number from the user
 -- and reverses its digits using a WHILE loop.
+ACCEPT V_NUMBER NUMBER PROMPT 'ENTER A VALUE:';
+DECLARE 
+    V_NUMBER VARCHAR2(10);
+    V_RESULT VARCHAR2(10);
+BEGIN
+    V_NUMBER := &V_NUMBER;
+    V_RESULT := '';
+    WHILE LENGTH(V_NUMBER)>0 LOOP
+        V_RESULT := V_RESULT || SUBSTR(V_NUMBER, -1);
+        V_NUMBER := SUBSTR (V_NUMBER, 1, LENGTH(V_NUMBER)-1);
+    END LOOP;
+    DBMS_OUTPUT.PUT_LINE(V_RESULT);
+END;
+/
+
 
 SET SERVEROUTPUT ON
 ACCEPT v_number NUMBER PROMPT 'Enter a number: ';
@@ -113,6 +187,29 @@ END;
 -- Employees table has three attributes: employee_id (primary key), name and salary. Make sure that
 -- you have created the table and inserted some tuples.
 
+DECLARE
+    CURSOR C IS 
+        SELECT * FROM EMPLOYEES;
+    V_ID EMPLOYEES.EMPLOYEE_ID%TYPE;
+    V_NAME EMPLOYEES.NAME%TYPE;
+    v_salary EMPLOYEES.SALARY%TYPE;
+    V_DEPT EMPLOYEES.DEPT_NAME%TYPE;
+BEGIN
+    OPEN C;
+    LOOP
+        FETCH C INTO V_ID, V_NAME, v_salary, V_DEPT;
+        EXIT WHEN C%NOTFOUND;
+        IF v_salary >60000 THEN
+            DBMS_OUTPUT.PUT_LINE(V_NAME);
+        END IF;
+    END LOOP;
+    CLOSE C;
+END;
+/
+
+
+
+
 drop table employees;
 CREATE TABLE employees (
     employee_id NUMBER primary key,
@@ -131,6 +228,22 @@ UPDATE employees SET dept_name = 'HR' WHERE employee_id in (1, 3, 5);
 UPDATE employees SET dept_name = 'IT' WHERE employee_id in (2, 4);
 COMMIT;
 SELECT * FROM employees;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 -- PL/SQL block 
 DECLARE
@@ -180,6 +293,21 @@ END;
 
 -- 8. Count Digits in a Number: Write a PL/SQL block that takes a number as input and counts the total
 -- number of digits using a WHILE loop.
+
+ACCEPT V_NUMBER NUMBER PROMPT 'ENTER A VALUE: ';
+DECLARE
+    V_NUMBER VARCHAR2(10);
+    V_RESULT NUMBER;
+BEGIN
+    V_NUMBER:= &V_NUMBER;
+    V_RESULT := 0;
+    WHILE LENGTH(V_NUMBER)>0 LOOP
+        V_NUMBER := SUBSTR(V_NUMBER, 1 , LENGTH(V_NUMBER)-1);
+        V_RESULT :=V_RESULT+1;
+    END LOOP;
+    DBMS_OUTPUT.PUT_LINE(V_RESULT);
+END;
+/
 
 ACCEPT V_INPUT PROMPT 'Enter a number: '
 DECLARE
