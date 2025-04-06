@@ -105,8 +105,8 @@ VALUES (50001, 1, 501, TO_DATE('2020-01-01', 'YYYY-MM-DD') + ROUND(DBMS_RANDOM.V
 COMMIT;
 
 -- 4
-SELECT * FROM mv_sales_products ORDER BY PRODUCT_ID;
+SELECT * FROM mv_sales_products WHERE PRODUCT_ID = 1;
 
 -- 5
 EXEC DBMS_MVIEW.REFRESH('mv_sales_products', 'C');
-SELECT * FROM mv_sales_products ORDER BY PRODUCT_ID;
+SELECT * FROM mv_sales_products WHERE PRODUCT_ID = 1;
