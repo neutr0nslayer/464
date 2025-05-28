@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8F449BB8-F50D-0D2C-F47D-39646FC4BA06" containerWithKeyObject="08525D79-00D0-572C-F60A-26765C4AD124" localFKIndex="49C55EDC-EFD6-273F-43D0-5888F0922BB4" name="slottable_halltable_FK">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 12:10:07 UTC</createdTime>
+<generatorID>B227B4AA-ED32-E0E4-E2A4-9D82564B9E86</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<referredTableLongName>halltable</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>04FB520B-AE47-0336-73BA-5105C4EDEDBE</referredTableID>
+<keyObject>05B81D90-E9A2-5FB2-747C-739EDCF071D6</keyObject>
+<referredKeyID>05B81D90-E9A2-5FB2-747C-739EDCF071D6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>hallid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
