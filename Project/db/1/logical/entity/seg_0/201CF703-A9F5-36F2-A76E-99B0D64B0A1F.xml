@@ -1,0 +1,267 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="201CF703-A9F5-36F2-A76E-99B0D64B0A1F" name="halltable audit">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:51:19 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="audit id" id="70446300-BBD8-A1BE-0DCF-ECCBE3DBE4CB">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:51:33 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hallid" id="BC5A4E21-9761-9288-05D5-45A2DCF9D1BF">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:51:52 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>385B6834-0FC1-769D-5DB5-4150586DCC7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="operation type" id="2AA78C3A-5913-F3D8-166F-BC4D6BE13B36">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:52:04 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT041</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old hallname" id="9932C6F9-1F05-571A-125A-EDA6F3F71C96">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:55:56 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67DC6F65-3640-3BE7-D98A-A27A9FA00FD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new hallname" id="A39F44E7-7256-7564-2BB4-29D9FCE66418">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:56:15 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67DC6F65-3640-3BE7-D98A-A27A9FA00FD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old location" id="92EEF5DD-C05A-5010-D2BD-CB47F08D5322">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:56:26 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>ECF0DF4F-3CCE-749D-C178-E0F28A7BD6C9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new location" id="F1F5721A-96F9-C0A3-2770-E29E57899EC5">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:56:37 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>ECF0DF4F-3CCE-749D-C178-E0F28A7BD6C9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old rating" id="AAB2F41E-2EDF-986B-4FAC-A6F54F76A88F">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:56:44 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>385B6834-0FC1-769D-5DB5-4150586DCC7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new rating" id="2526BE5F-63CE-8CF5-A5E0-0D6B5B653E28">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:57:11 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>385B6834-0FC1-769D-5DB5-4150586DCC7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old type" id="C3FCBAA8-98EC-A961-0DDF-4DCC9AC69958">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:58:32 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67DC6F65-3640-3BE7-D98A-A27A9FA00FD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new type" id="50444F9B-ACED-BED1-7218-2A8A9FACC393">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:58:52 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67DC6F65-3640-3BE7-D98A-A27A9FA00FD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old capsity" id="FBFFC04F-F463-0F5E-B97F-AD5C17FBDCD0">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:59:10 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>385B6834-0FC1-769D-5DB5-4150586DCC7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new capsity" id="57E5CA7C-1D8C-9EAA-3361-97C4E8BCC87C">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:59:42 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>385B6834-0FC1-769D-5DB5-4150586DCC7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="performed by" id="832F5870-B450-26C6-BB82-162587824D48">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:59:53 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67DC6F65-3640-3BE7-D98A-A27A9FA00FD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="operation time" id="32E13CEE-9438-25A9-0CC3-CB23B7F73273">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:00:10 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<domain>0F84CE30-17FB-68A0-A69B-0448062323DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user ip address" id="8C5968E6-A2FB-76D1-79C7-A018B42281C8">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:00:29 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67DC6F65-3640-3BE7-D98A-A27A9FA00FD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="session user" id="4BDA2B1B-EC5D-0E76-BD0F-B649536DCD96">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:02:50 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67DC6F65-3640-3BE7-D98A-A27A9FA00FD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="host name" id="6A182CCE-86A1-C010-8021-1B1F23CD0CB5">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:01:16 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67DC6F65-3640-3BE7-D98A-A27A9FA00FD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2150B7FA-4BE0-9CFF-BD7B-97277DB44624" name="halltable_audit_PK">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:51:40 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>70446300-BBD8-A1BE-0DCF-ECCBE3DBE4CB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

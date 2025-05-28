@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="seattable ticket FKv2" directorySegmentName="seg_0" id="66A749DD-838F-41C0-02F2-80CFB6628D77">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:24:32 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<sourcePk>9AE94222-810A-7D7A-8F7A-7506D643E4BC</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>64BE29BE-4479-6A51-EDF3-CF283E643ACD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2F1B0170-CFD8-263D-B8A9-6638A7E34C52</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

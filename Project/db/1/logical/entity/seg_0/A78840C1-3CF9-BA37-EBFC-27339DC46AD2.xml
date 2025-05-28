@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A78840C1-3CF9-BA37-EBFC-27339DC46AD2" name="usertable">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 11:44:47 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="1E6717B2-94C6-F134-59CF-79864C5CA3E9">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 11:44:55 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="D7F6EF9D-DA27-A932-3F1E-FA8FF034241A">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 11:45:52 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="2978B73A-809D-DF51-61B5-F1AF814C2EDA">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 11:46:00 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="username" id="7A2C69E0-5C05-3C1C-DEB3-7E925F0FD0D2">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 11:46:07 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="password" id="93E989F2-D781-5A0F-A2E7-506BAA9523B1">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 11:46:18 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="userType" id="17F2DCC4-8B93-2329-551E-EBCEFAD2B5BA">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:08:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0B5267C8-0683-E145-953A-905F42E7264F" name="usertable PK">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 11:45:06 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1E6717B2-94C6-F134-59CF-79864C5CA3E9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

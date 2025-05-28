@@ -1,0 +1,240 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="57262B56-9240-4F25-50B9-31D261E8538B" name="ticket_audit">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:23:15 UTC</createdTime>
+<generatorID>FB7CB3B1-B594-A4F1-E91A-4E4756E72CDA</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="audit_id" id="D174A543-B5D1-977D-B425-6E63DC0206B1">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:23:15 UTC</createdTime>
+<generatorID>46B476DC-D8C3-3DFC-E800-C3A46682CE9A</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>385B6834-0FC1-769D-5DB5-4150586DCC7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="operation_type" id="B1BAB97C-3D27-23F3-2B2C-523EFDD73394">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 17:20:00 UTC</createdTime>
+<generatorID>2AA78C3A-5913-F3D8-166F-BC4D6BE13B36</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67DC6F65-3640-3BE7-D98A-A27A9FA00FD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ticketid" id="80E1569B-6083-F614-23B3-4B7C35D8EC4E">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:23:15 UTC</createdTime>
+<generatorID>24B1090E-E8F7-524B-EEE4-6BA091103329</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="old_price" id="9683252C-41CD-DE21-110A-F0727112DB9E">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:23:15 UTC</createdTime>
+<generatorID>7A61F479-75BA-8CF5-FF42-17619A3F4A07</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="new_price" id="F38AF0E5-4C55-A487-8754-8A497EBA1CCF">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:23:15 UTC</createdTime>
+<generatorID>5F2DE900-A370-C6A1-5A4C-925393616CF3</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="old_buyingDate" id="DB6738D2-F721-CBAA-8738-507BF428B10E">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:23:15 UTC</createdTime>
+<generatorID>FF61DCC0-8024-6BDD-9C87-FDB9A44CACE2</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="new_buyingDate" id="D6DDCF02-F3A4-71F0-59CB-E0D5C1A26696">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:23:15 UTC</createdTime>
+<generatorID>6EAAE0A4-D1D3-75A4-BF5C-208AC4D86810</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="old_id" id="8C5A741B-8433-A085-62F7-F7192843E664">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:23:15 UTC</createdTime>
+<generatorID>7D2847A7-63CA-B7A3-0730-5C1F0710B371</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="new_id" id="5FEF5838-C73A-02B2-026F-0B9F5490FC9A">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:23:15 UTC</createdTime>
+<generatorID>CA9A70BE-2561-1BD0-EBE6-1D8447BDBF25</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="old_slotid" id="AABAEE65-12F8-FD43-6BCD-3DB6C60ADDA5">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:23:15 UTC</createdTime>
+<generatorID>E8C20E36-7B67-CEB8-C09C-D8C30E7B6B9B</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="new_slotid" id="AB398CF4-5083-B5AB-E29E-B767045C0FE6">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:23:15 UTC</createdTime>
+<generatorID>86EF797D-8E05-FC59-BD42-759DA1D9156C</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="performed_by" id="4B8F93F8-7C85-F3B5-423F-88FAA410660A">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:23:15 UTC</createdTime>
+<generatorID>1B87BBD0-A66F-1FB5-0BFC-D951A1A48A38</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67DC6F65-3640-3BE7-D98A-A27A9FA00FD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="operation_time" id="6D1F2521-6956-7125-3ADE-85410DEB6A39">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:23:15 UTC</createdTime>
+<generatorID>50247E7A-BB1A-9E68-4B6C-5C4A13B137CB</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<domain>0F84CE30-17FB-68A0-A69B-0448062323DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_ip_address" id="FB280D6A-DF30-74FE-8CED-8E371D9C70EF">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:23:15 UTC</createdTime>
+<generatorID>81274B72-F8A1-EB6F-B33C-047448D79878</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67DC6F65-3640-3BE7-D98A-A27A9FA00FD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="session_user" id="ECEFCDA6-F0AA-5B82-D056-3E3F6FFC4996">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:23:15 UTC</createdTime>
+<generatorID>A0BC388D-7026-44EC-6335-5CF5E826FDBE</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67DC6F65-3640-3BE7-D98A-A27A9FA00FD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="host_name" id="FC4A4D26-645F-2DD8-7465-CA3BA7BA08C5">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:23:15 UTC</createdTime>
+<generatorID>1C9778ED-1AAB-8D9F-3973-9AFAFA872B7D</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67DC6F65-3640-3BE7-D98A-A27A9FA00FD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="old_movieid" id="CBE41BEF-CF9F-10CC-E32D-2A7F465B407B">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:39:59 UTC</createdTime>
+<generatorID>667192AD-8BEE-4621-01C9-81613DFB6DFE</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="new_movieid" id="B5681AB9-2EF5-0B94-D1D4-B3539AF74C6C">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:39:59 UTC</createdTime>
+<generatorID>65DF1204-AD94-BC9F-EB0B-0438E82124EB</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7E036AAF-7DB9-C142-C879-60F7370C41FF" name="ticket_audit_PK">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:23:15 UTC</createdTime>
+<generatorID>2B541739-F36A-6DC9-B073-276A658EC5AB</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D174A543-B5D1-977D-B425-6E63DC0206B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

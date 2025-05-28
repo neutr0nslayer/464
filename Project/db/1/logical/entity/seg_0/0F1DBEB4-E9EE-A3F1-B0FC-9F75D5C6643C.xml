@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0F1DBEB4-E9EE-A3F1-B0FC-9F75D5C6643C" name="seattable_audit">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:38:10 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="audit_id" id="D1B9C656-AFFA-9B0C-87F5-A3E74F3B6293">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:38:34 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>385B6834-0FC1-769D-5DB5-4150586DCC7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old_seatno" id="018E5484-92A4-5878-EAA4-A04E24A7CAD5">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:38:10 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new_seatno" id="B6B584BC-2A3C-0DBD-09D5-5E3480113C07">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:39:09 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old_ticketid" id="711139C8-3E60-FCCA-3895-BFFF3AD55D4A">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:38:10 UTC</createdTime>
+<generatorID>66A749DD-838F-41C0-02F2-80CFB6628D77</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new_ticketid" id="F4F51531-C526-4006-632B-310573118A01">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:39:33 UTC</createdTime>
+<generatorID>66A749DD-838F-41C0-02F2-80CFB6628D77</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3C3EE035-4535-A5AF-17DD-7B82D11D8525" name="seattable PK">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:38:10 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D1B9C656-AFFA-9B0C-87F5-A3E74F3B6293</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

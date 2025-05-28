@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="08525D79-00D0-572C-F60A-26765C4AD124" name="slottable">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 12:10:07 UTC</createdTime>
+<generatorID>F17B004D-3C69-E378-BE4C-7820E60A4911</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="slotid" id="5BA5661D-5AB9-D389-4347-4AFA00C468B6">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 12:10:07 UTC</createdTime>
+<generatorID>73E22E87-4BD6-5DAD-5B08-65BADC1C1F66</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date" id="8E5126D1-61CF-769C-E33E-AB150D167B67">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 12:10:07 UTC</createdTime>
+<generatorID>89862779-311D-A97E-4E84-77E06DE38C74</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="movietable_movieid" id="6BB60DBB-A762-2B93-68B8-939CD2AA8DC7">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 12:10:07 UTC</createdTime>
+<generatorID>983DF99A-8453-9672-739B-189207B289F6</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9FFC3A60-3609-73A6-7385-437D1C7375FC" referredColumn="E72BE607-AF78-7741-76A2-BD4C44CB5E8A"/>
+</associations>
+</Column>
+<Column name="halltable_hallid" id="E6CBDD66-5E3D-4C4F-0017-4513EB660CA7">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 12:10:07 UTC</createdTime>
+<generatorID>4126E1A4-8AAD-E456-F7DC-9CA0FDD92C77</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8F449BB8-F50D-0D2C-F47D-39646FC4BA06" referredColumn="A6B9DCA6-3052-23B7-5005-4AD81AD67912"/>
+</associations>
+</Column>
+<Column name="slot" id="9C935F4C-18B9-9955-7C3D-8B187D9617AF">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:12:23 UTC</createdTime>
+<generatorID>7DB2EAEE-9214-7410-5131-6B8B3E7A6162</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price" id="B578F954-2621-FEB8-8AD1-B4943B9E72E1">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:33:42 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>385B6834-0FC1-769D-5DB5-4150586DCC7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3413E973-5150-7DF3-CEC5-D1BD811F83A3" name="slottablev1_PK">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 12:10:07 UTC</createdTime>
+<generatorID>3E81D9AC-FD10-5692-33EE-F1D2CE24E5DF</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5BA5661D-5AB9-D389-4347-4AFA00C468B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9F7F4077-EE4D-2581-D06E-49BC9A2C0395" name="slottable_movietable_FK">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 12:10:07 UTC</createdTime>
+<generatorID>AD541F92-25A6-99FA-929D-BA8BDA6CA57D</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6BB60DBB-A762-2B93-68B8-939CD2AA8DC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49C55EDC-EFD6-273F-43D0-5888F0922BB4" name="slottable_halltable_FK">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 12:10:07 UTC</createdTime>
+<generatorID>B227B4AA-ED32-E0E4-E2A4-9D82564B9E86</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6CBDD66-5E3D-4C4F-0017-4513EB660CA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

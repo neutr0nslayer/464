@@ -1,0 +1,262 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C47CA6AC-48AA-2067-4037-4ECCCFC23ED7" name="slottable audit">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:11:31 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="audit id" id="E5B4B724-3141-EA29-C4AD-83B42663ED15">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:11:45 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>385B6834-0FC1-769D-5DB5-4150586DCC7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="slotid" id="85198010-6FC1-4140-DAE2-C0454590C451">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:11:31 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old date" id="7DA52C90-E619-8457-6873-6CBB82806231">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:11:31 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old movieid" id="BDA81C8F-CC04-8197-C351-14D5433772AA">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:11:31 UTC</createdTime>
+<generatorID>AD541F92-25A6-99FA-929D-BA8BDA6CA57D</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old hallid" id="C06A1F30-DBA8-CD87-5FC1-7D3CFAB22E6D">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:11:31 UTC</createdTime>
+<generatorID>B227B4AA-ED32-E0E4-E2A4-9D82564B9E86</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old slot" id="E83D85B5-5AB4-99EB-5233-C2D2BFD0E799">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:11:31 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new date" id="8FCBD4FE-E30A-9530-3F51-F97344DE33FA">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:12:14 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new movieid" id="971677C7-E25C-6638-FF73-AF07D516A259">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:12:17 UTC</createdTime>
+<generatorID>AD541F92-25A6-99FA-929D-BA8BDA6CA57D</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new hallid" id="59B308E4-369B-AC65-9C7C-C5AF81C62DAA">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:12:19 UTC</createdTime>
+<generatorID>B227B4AA-ED32-E0E4-E2A4-9D82564B9E86</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new slot" id="611B0D55-2B40-D3FF-3AEC-F84DA7CFB2BC">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:12:22 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="performed by" id="F0291A30-F5EE-8F68-2D46-AFFE2538A752">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:18:26 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67DC6F65-3640-3BE7-D98A-A27A9FA00FD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="operation time" id="776D5259-1A3D-4FC0-E955-666558210084">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:18:26 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<domain>0F84CE30-17FB-68A0-A69B-0448062323DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user ip address" id="6C541E25-8972-48CF-0D76-83E26FC664A1">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:18:26 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67DC6F65-3640-3BE7-D98A-A27A9FA00FD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="session user" id="2330836B-DCB2-1B6E-1575-FC2871AAA023">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:18:26 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67DC6F65-3640-3BE7-D98A-A27A9FA00FD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="host name" id="5CD78227-FCE5-8FC9-6E09-484FEBEB14C7">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:18:26 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67DC6F65-3640-3BE7-D98A-A27A9FA00FD3</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old price" id="FE3400AF-7E5D-E269-0C80-66A64C5EFEEB">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:36:58 UTC</createdTime>
+<generatorID>90695C40-69B6-1967-32BC-6EBF628B0C38</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>385B6834-0FC1-769D-5DB5-4150586DCC7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new price" id="5503B2F8-737F-2A07-173B-23B2ED1BD513">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:36:58 UTC</createdTime>
+<generatorID>DC1A1716-EBC3-9726-FF53-3B56507A4C41</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>385B6834-0FC1-769D-5DB5-4150586DCC7F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="09BBE934-451D-03C3-0C59-F4E6F070E4BB" name="slottable_audit_PK">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 15:11:31 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1D2E9635-057B-9DC7-AC5E-7BD526CF1509" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E5B4B724-3141-EA29-C4AD-83B42663ED15</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

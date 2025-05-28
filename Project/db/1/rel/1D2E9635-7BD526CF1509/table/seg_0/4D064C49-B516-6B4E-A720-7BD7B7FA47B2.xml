@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D064C49-B516-6B4E-A720-7BD7B7FA47B2" name="usertable">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 11:54:23 UTC</createdTime>
+<generatorID>A78840C1-3CF9-BA37-EBFC-27339DC46AD2</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="C6909E6D-CAA7-69A5-0E2F-51FE087726D9">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 11:54:23 UTC</createdTime>
+<generatorID>1E6717B2-94C6-F134-59CF-79864C5CA3E9</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="B4FD60CC-56D9-F8D9-C135-B186F16D5B58">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 11:54:23 UTC</createdTime>
+<generatorID>D7F6EF9D-DA27-A932-3F1E-FA8FF034241A</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="1FB11CF8-55F3-8B98-E0F3-386E4106660F">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 11:54:23 UTC</createdTime>
+<generatorID>2978B73A-809D-DF51-61B5-F1AF814C2EDA</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>70</dataTypeSize>
+<ownDataTypeParameters>70,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="username" id="D888576D-DF93-484A-2E17-9CCD5D1C153E">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 11:54:23 UTC</createdTime>
+<generatorID>7A2C69E0-5C05-3C1C-DEB3-7E925F0FD0D2</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="9F14F2DA-5A04-83B3-4089-497A2F3A20DC">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 11:54:23 UTC</createdTime>
+<generatorID>93E989F2-D781-5A0F-A2E7-506BAA9523B1</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="userType" id="46F36453-9B5F-E8D8-6F4A-065F0455E779">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-28 14:12:23 UTC</createdTime>
+<generatorID>17F2DCC4-8B93-2329-551E-EBCEFAD2B5BA</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DB5B1D94-BEFC-7C10-9979-4354CD89389F" name="usertable_PK">
+<createdBy>moham</createdBy>
+<createdTime>2024-09-11 11:54:23 UTC</createdTime>
+<generatorID>0B5267C8-0683-E145-953A-905F42E7264F</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C6909E6D-CAA7-69A5-0E2F-51FE087726D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
