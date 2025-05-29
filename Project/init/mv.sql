@@ -12,14 +12,11 @@ SELECT
     t.price,
     t.buyingdate,
     t.seatno,
-    -- u.id AS user_id,
     u.email AS user_email,
     u.name AS user_name,
-    -- s.slotid,
     s."date" AS slot_date,
     s.slot,
     s.price AS slot_price,
-    -- m.movieid,
     m.moviename,
     m.releasedate,
     m.genre,
@@ -27,9 +24,7 @@ SELECT
     h.hallid,
     h.hallname,
     h.location AS hall_location,
-    -- h.rating AS hall_rating,
     h.type AS hall_type
-    -- h.capasity AS hall_capasity
     
 FROM
     (SELECT * FROM ticket JOIN seattable ON ticket.ticketid = seattable.ticket_ticketid) t
@@ -44,6 +39,7 @@ JOIN
 ORDER BY
     t.buyingdate, m.releasedate;
 
+SELECT * FROM ticket t JOIN seattable st ON t.ticketid = st.ticket_ticketid JOIN usertable u ON t.usertable_id = u.id JOIN slottable s ON t.slottable_slotid = s.slotid JOIN movietable m ON s.movietable_movieid = m.movieid JOIN halltable h ON s.halltable_hallid = h.hallid ORDER BY t.buyingdate, m.releasedate;
 
 
 
