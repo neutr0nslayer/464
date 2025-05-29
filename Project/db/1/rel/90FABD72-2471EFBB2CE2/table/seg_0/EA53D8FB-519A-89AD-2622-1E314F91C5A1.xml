@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EA53D8FB-519A-89AD-2622-1E314F91C5A1" name="slottable">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>DBCBBBBE-7516-450B-A744-AAA887099790</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="slotid" id="7519EE43-EE0A-4829-BCB3-29F8B7E6510A">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>E5B51913-699F-20A0-44BC-504F899FE622</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date" id="0564FBA1-0BA4-25A4-7DEE-4EB39D939121">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<nameHasQuotes>true</nameHasQuotes>
+<importedID>2FFE89A0-1C83-7CEA-0EF5-CA316730CBF5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>096CB8A9-99B8-84ED-24C0-4A69CE9BDFEB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="movietable_movieid" id="224DEA02-69B7-FE51-86CC-7826D689010E">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>89DE0AC8-F0E1-4C31-471C-87DEBD9453CE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FC4D6523-9800-D903-44C5-1C302E0975C6" referredColumn="E1E79E2E-B816-367D-C848-E3D547D4E3DD"/>
+</associations>
+</Column>
+<Column name="halltable_hallid" id="52EC3C67-B4C4-278A-162F-573EFEEB05F5">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>E5075811-2DDB-704E-EE13-8D6E1C36A18C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6AB9E0E3-AB5C-2BBD-4D89-06724E49332A" referredColumn="F1313628-550F-6FA2-9FF0-5C82DF782792"/>
+</associations>
+</Column>
+<Column name="slot" id="152382CC-29A1-FBE7-7234-B67816B31633">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>750D16E7-445C-AFA0-669C-BEB8E3D8AE4B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A4C8D358-34EA-A2CB-5C67-A9704225D227</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price" id="DAEF7185-04C4-5636-749E-BCC5A40031E3">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>5BCE5222-D391-5945-7145-EF34BD0ED7A6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1A7737EF-D000-EF48-0794-8D86184D71DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CAB07746-81FF-5EC6-ED97-D24F8464B87C" name="slottable_PK">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>B7EFB1F4-7BF0-9CDA-13D1-90363FA4A6C5</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7519EE43-EE0A-4829-BCB3-29F8B7E6510A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DED0151-8E32-597A-36CA-7EAA2F206A7D" name="slottable_halltable_FK">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52EC3C67-B4C4-278A-162F-573EFEEB05F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6316922A-4CD5-2F86-2DAF-DAFAC8ED9BD2" name="slottable_movietable_FK">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="224DEA02-69B7-FE51-86CC-7826D689010E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

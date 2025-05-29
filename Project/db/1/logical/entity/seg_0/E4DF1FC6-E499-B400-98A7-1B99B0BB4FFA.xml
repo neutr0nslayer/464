@@ -1,0 +1,277 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E4DF1FC6-E499-B400-98A7-1B99B0BB4FFA" name="ticket audit">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>254913E3-5D9F-17CF-1F0F-ECE2A452B892</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="audit id" id="DEE8C00A-0649-BBCE-FAF9-F39FFF441932">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>4CDBE6C9-C4E9-3394-29CD-8F7D7A622965</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1A7737EF-D000-EF48-0794-8D86184D71DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="operation type" id="449A2571-4591-93FB-DCF2-06709B7C2688">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>4A9EA553-FF6B-DC55-5578-6D1D3CF76F96</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>216B5C8B-877F-2856-927F-826177B2F86F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ticketid" id="704442C6-34C6-EA6C-4BF4-AEA15025451A">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>B269768A-6009-1DCF-5B49-F0F9B9E739DC</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old price" id="599F57F7-36E3-CD6D-A2E9-2CECD2BF185B">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>B74ECB75-8EC1-F46F-88A8-FBE06CBCB1CB</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new price" id="3FDC8677-7FE7-9DF9-5A73-80153936E219">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>EC92DF0D-DF8D-60F1-882A-B98AC6594007</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old buyingdate" id="BAFF8271-A063-6B96-13AA-ECC12D52C0E1">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>6E77AEB8-430A-A960-A7F9-8983359F64D9</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>096CB8A9-99B8-84ED-24C0-4A69CE9BDFEB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new buyingdate" id="DF10688B-7D38-E12D-CBFC-DE465C156C91">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>A04C376F-D382-B2B0-000E-B13448CC82E3</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>096CB8A9-99B8-84ED-24C0-4A69CE9BDFEB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old id" id="0B90F1B2-36F5-5346-279E-4694D8B9C1B6">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>FFAA20A8-CCE0-ABF6-9115-76BE926EC34C</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new id" id="7E5D84DB-6FA0-7F49-F126-1A743CD145F4">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>2E731F43-602E-1387-3BBD-FBBB84E62C1C</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old slotid" id="A683157F-B714-9195-CF9E-CE984A7C67F0">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>C2647B0C-691C-F4DC-39DE-D3B13F8CA5AA</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new slotid" id="3D8DED91-D4C8-0D72-8B32-554FA9404747">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>31DE8BE6-FE1B-DF7F-85D9-D7B50348ED7E</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="performed by" id="8203DF2A-7D54-905B-822A-9A66AAC917B3">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>DB602405-6180-466A-E8C6-07ADACF54343</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="operation time" id="6BA6325E-B88A-27B7-9AF4-A45BD678BE78">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>98B8F777-2E61-10F6-3F64-07D5377C1555</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<domain>CDC0C9E0-B891-D0B0-9234-8556146060DC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user ip address" id="20D0FA77-872B-08ED-0CDA-823D4C0392BC">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>24599B52-3D7E-FC4F-A6ED-225714323740</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="session user" id="31304BE6-9BB5-D563-1087-230AA79483E6">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>4F16AC33-EFF5-24AD-B7EA-DF727E54ACFA</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="host name" id="B0FDF568-5FD8-7DD7-810D-2699D6AFB89E">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>9BB02B36-9983-0F45-CAE0-FF421F5FA974</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FA483277-FEDE-A1DE-CAFD-BCA253FB29D1" name="ticket audit pk">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>E7824EBD-C834-F188-AE58-C37EF1CF364C</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="false"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DEE8C00A-0649-BBCE-FAF9-F39FFF441932</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,202 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0D091392-4177-21DA-BA82-C8170F298E75" name="seattable audit">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>B4F5FC8C-3041-941B-E65C-E0BECC56D3A1</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="audit id" id="54577964-6BE6-CD5D-C882-066726A370F0">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>811100DB-7920-E852-44DA-B55C52540D1E</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1A7737EF-D000-EF48-0794-8D86184D71DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="operation type" id="567399B1-3FBC-CAC9-5437-887202972879">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>014FAF7B-BB7F-7B19-4D88-790E3CE343A9</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>216B5C8B-877F-2856-927F-826177B2F86F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old seatno" id="EB28ECD0-1339-CF1F-D48E-4DB650C842AA">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>2C23E634-666A-D954-9B43-6ADA431943BC</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1A7737EF-D000-EF48-0794-8D86184D71DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new seatno" id="3882F9DB-40D2-5D8A-0491-F068E5A2E470">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>109EDF91-483C-D045-5334-9296A3360823</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1A7737EF-D000-EF48-0794-8D86184D71DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old ticketid" id="6ABC5C4A-B037-4ED4-CFFB-008CD457DDC7">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>48E968C5-2E03-D942-C7B0-66DE0263899B</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new ticketid" id="CE82516D-C4F3-93CC-B130-9CC46E3EBEA7">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>D7F4E85E-D3F8-A8ED-80C6-7081D3CE224E</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="performed by" id="6A6D2DE8-554E-F5C1-7D53-7F051307F9DF">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>DBC077EF-F791-7936-4541-6F621072D08B</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="operation time" id="2D6E8E7A-6C60-4C2F-0BA2-AC7371D7466F">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>1CA3B13B-0545-0789-FCC5-B054A60445B4</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<domain>CDC0C9E0-B891-D0B0-9234-8556146060DC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user ip address" id="26830C36-C1B2-FBED-B30A-F3AF04A9E50A">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>2B812401-CC0C-63D2-104E-B9B85F177F26</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="session user" id="2D14D521-ED26-5EE5-0C76-81C874BB63B1">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>E44277E4-C157-E7AB-DF89-43C9F9C229B0</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="host name" id="C9F961A3-9493-EA10-41DF-FAE9CCBB2678">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>4AFBB66B-151C-5522-205B-99AAE779689E</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2FE54692-5F9E-2DDF-1CBB-5F2726A9FE79" name="seattable audit pk">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>B739D63F-0A99-D38E-D2DA-A2454150EFD1</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="false"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>54577964-6BE6-CD5D-C882-066726A370F0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C449EE15-E969-3351-FA52-BEF12AFFE9EF" name="ticket">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>B25BEAED-A067-6FC0-C69D-9E57C3DCCD6A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ticketid" id="876D7B69-A9F3-4C62-79B6-B7410BC70EAB">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>311C324F-3831-87A1-423E-6342B03F6256</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price" id="B325C649-9BDB-4176-4B54-4FB299E48025">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>F54B286E-723A-2CF4-6E10-C79204D86907</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="buyingdate" id="32A98DC7-4C4F-9C2C-2E07-9627429431CD">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>874E254F-FD1C-984A-5551-C4BE2465DF50</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>096CB8A9-99B8-84ED-24C0-4A69CE9BDFEB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usertable_id" id="2227A19C-E3D0-1F82-6607-DC7324D5F37C">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>1ACDC8F8-1F87-ED5F-34A3-A66E2C08B352</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="607E533A-A222-E19A-1A07-AEA6F2151D0A" referredColumn="B33A0619-A82C-E00E-0640-4485A0C0365D"/>
+</associations>
+</Column>
+<Column name="slottable_slotid" id="54899AD2-4FDC-B4E8-6D06-815DE13442B3">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>4ED46079-AA9C-BB7D-1E33-702C4326DD68</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="14665432-B38F-CF8F-7547-1673A9B56F80" referredColumn="7519EE43-EE0A-4829-BCB3-29F8B7E6510A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C8F0A762-0B3C-EFDF-0E47-B7557BF2FDC0" name="ticket_PK">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>B58D7DCE-6EBE-E1DF-3A01-CA5F1B7AACCC</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="876D7B69-A9F3-4C62-79B6-B7410BC70EAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B8792AE6-5FC4-39A5-1309-D8A05DE4A802" name="ticket_slottable_FK">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="54899AD2-4FDC-B4E8-6D06-815DE13442B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="182E2EC9-3B39-7459-C2E5-D9140BD679BE" name="ticket_usertable_FK">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2227A19C-E3D0-1F82-6607-DC7324D5F37C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

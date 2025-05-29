@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EAD58BB5-5343-8DBF-997D-B98C3C7C9A39" name="ratingtable">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:13 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rating_id" id="6C96B287-6BB1-2582-8D87-2E06463D81C6">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:31 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="movie_rating" id="EB3913EB-7D6D-E03E-0ED9-89E2F6C5EE11">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:41 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="hall_ratting" id="70B20A2B-2E14-348F-2076-C548CFA203A0">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:51:30 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ticketid" id="043C26C4-0680-6DF0-7ADA-85CA3A160571">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:53:47 UTC</createdTime>
+<generatorID>711E3DDC-FBFF-3335-DA01-4B4D2FEE49FF</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<referedAttribute>65D21FE6-E885-CA9A-AD7D-49879F072D6D</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9031F972-449B-6E62-F3AB-7CC88787301F" name="ratingtable PK">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:51:29 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6C96B287-6BB1-2582-8D87-2E06463D81C6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

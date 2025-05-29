@@ -5,4 +5,15 @@
 <ownerDesignName>1</ownerDesignName>
 <capitalNames>false</capitalNames>
 <designId>D091D764-4193-5BD3-15D9-2B340366989B</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="68C87827-7D81-FF25-8FD2-3C802EF24043">
+<designStoragePath>C:\prov</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="17F696E1-21FC-9A87-7E0A-CE83889E6083">
+<designStoragePath>C:\ prov_v2</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="F98FBE5C-F296-7DEE-C701-4F5BB5F09E79">
+<designStoragePath>C:\prov_v2</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
 </OSDM_Design>

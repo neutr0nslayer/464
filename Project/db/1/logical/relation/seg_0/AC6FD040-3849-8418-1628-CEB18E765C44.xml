@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ticket_usertable_fk" directorySegmentName="seg_0" id="AC6FD040-3849-8418-1628-CEB18E765C44">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>607E533A-A222-E19A-1A07-AEA6F2151D0A</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<sourcePk>659618DE-4699-38A6-24F5-9DA4F6D321FB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E646A3D8-C226-46F0-82CA-FB5AAA8D8CC7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0B6B6301-D509-375C-956E-71A649624E31</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

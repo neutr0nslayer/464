@@ -13,49 +13,55 @@ if "connection" not in st.session_state:
 def show_login():
     st.title("🔐 Oracle Database Login")
 
-    with st.form("login_form"):
-        username = st.text_input("Username")
-        password = st.text_input("Password", type="password")
-        submitted = st.form_submit_button("Connect")
+    # Center the form using columns
+    left, center, right = st.columns([.2, 2, 3])  # Adjust proportions as needed
 
-    if submitted:
-        try:
-            dsn = cx_Oracle.makedsn("localhost", 1521, sid="orcl1")
-            connection = cx_Oracle.connect(user=username, password=password, dsn=dsn)
+    with center:
+        with st.form("login_form"):
+            username = st.text_input("Username")
+            password = st.text_input("Password", type="password")
+            submitted = st.form_submit_button("Connect")
 
-            # Store session connection
-            st.session_state.logged_in = True
-            st.session_state.connection = connection
-            st.session_state.username = username.upper()  # Save username (Oracle is case-insensitive by default)
+        if submitted:
+            try:
+                dsn = cx_Oracle.makedsn("localhost", 1521, sid="orcl1")
+                connection = cx_Oracle.connect(user=username, password=password, dsn=dsn)
 
-            # Check role privileges
-            cursor = connection.cursor()
-            cursor.execute("SELECT role FROM sys.user_role WHERE username = :username", [st.session_state.username])
-            roles = [row[0] for row in cursor.fetchall()]
+                st.session_state.logged_in = True
+                st.session_state.connection = connection
+                st.session_state.username = username.upper()
 
-            print(f"Roles for {st.session_state.username}: {roles}")  # <-- Debug print
+                # Check role privileges
+                cursor = connection.cursor()
+                cursor.execute("SELECT role FROM sys.user_role WHERE username = :username", [st.session_state.username])
+                roles = [row[0] for row in cursor.fetchall()]
 
-            # If user has the role, mark them as admin
-            if "admin" in roles:
-                st.session_state.role = "admin"
-            else:
-                st.session_state.role = "user"
+                if "admin" in roles:
+                    st.session_state.role = "admin"
+                else:
+                    st.session_state.role = "user"
 
-            st.success("✅ Connected!")
-            st.rerun()
+                st.success("✅ Connected!")
+                st.rerun()
 
-        except cx_Oracle.DatabaseError as e:
-            error, = e.args
-            st.error(f"❌ Connection failed: {error.message}")
+            except cx_Oracle.DatabaseError as e:
+                error, = e.args
+                st.error(f"❌ Connection failed: {error.message}")
 
 
 # Function to show the dashboard (after login)
 def show_dashboard():
     st.title("🎛️ Dashboard")
     
-    st.write( st.session_state.get("role"))
+    if st.session_state.get("role") == "admin":
+        st.subheader("Welcome, Super User!")
+        st.write("ADMIN ACCESS:")
+        if st.button("View Movie Slots"):
+            st.session_state.page = "movie_slots"
+            st.rerun()
+        
 
-    st.write("Welcome! Choose an action:")
+    st.write("General:")
 
     if st.button("View Hall Table"):
         st.session_state.page = "hall"
@@ -63,9 +69,7 @@ def show_dashboard():
     if st.button("Run Custom Query"):
         st.session_state.page = "custom_query"
         st.rerun()
-    if st.button("View Movie Slots"):
-        st.session_state.page = "movie_slots"
-        st.rerun()
+    
 
     if st.button("Logout"):
         st.session_state.logged_in = False

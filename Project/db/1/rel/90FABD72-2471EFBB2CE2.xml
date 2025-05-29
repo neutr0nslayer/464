@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="prov_v2" id="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" mainViewID="F93E5A1A-FEE5-D3DE-C9B0-61AF888E38D6">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:01 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>3FD120B5-9F4E-6278-D5E2-746D192C8319</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>prov_v2.ddl</fileName>
+<pathName>E:\UNI\464\Project\db</pathName>
+<dbType>11</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

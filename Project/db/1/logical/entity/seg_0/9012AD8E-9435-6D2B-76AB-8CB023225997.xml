@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9012AD8E-9435-6D2B-76AB-8CB023225997" name="slottable">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>EA53D8FB-519A-89AD-2622-1E314F91C5A1</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="slotid" id="0A298819-7053-9188-D764-0A07C1192FCC">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>7519EE43-EE0A-4829-BCB3-29F8B7E6510A</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date" id="0E3CF7C3-59B4-84C5-61B9-1F9547C77CA2">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>0564FBA1-0BA4-25A4-7DEE-4EB39D939121</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>096CB8A9-99B8-84ED-24C0-4A69CE9BDFEB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="movietable movieid" id="BF897243-B72F-72F7-0859-A054670BAFE4">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>0E384D28-1D73-F811-6F1A-2DB9BCB5EF0C</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<referedAttribute>ABC564B2-7152-57CF-5877-1257356BC48C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="halltable hallid" id="314DDF30-3E44-C7D5-7591-7AA6F0194451">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>0069EC24-BADF-F39B-E65B-5DCDDC1526C4</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<referedAttribute>95569285-69F4-1977-CE12-5CC78B46E4D2</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="slot" id="B8EC0B26-A4AC-22AF-7041-F9CD315D5722">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>152382CC-29A1-FBE7-7234-B67816B31633</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A4C8D358-34EA-A2CB-5C67-A9704225D227</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="price" id="FB50983F-66D8-1F8B-A1F6-DE0ABC5D9AC8">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>DAEF7185-04C4-5636-749E-BCC5A40031E3</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1A7737EF-D000-EF48-0794-8D86184D71DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0E3E2730-D9B3-4542-03C1-08906BAB68A8" name="slottablev1 pk">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>CAB07746-81FF-5EC6-ED97-D24F8464B87C</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="false"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0A298819-7053-9188-D764-0A07C1192FCC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

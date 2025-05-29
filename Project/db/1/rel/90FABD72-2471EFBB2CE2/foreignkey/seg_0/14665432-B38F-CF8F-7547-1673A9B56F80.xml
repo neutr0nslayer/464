@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="14665432-B38F-CF8F-7547-1673A9B56F80" containerWithKeyObject="C449EE15-E969-3351-FA52-BEF12AFFE9EF" localFKIndex="B8792AE6-5FC4-39A5-1309-D8A05DE4A802" name="ticket_slottable_FK">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>0C273F19-EE7B-7515-3A03-9771C70E7A74</importedID>
+<referredTableLongName>slottable</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EA53D8FB-519A-89AD-2622-1E314F91C5A1</referredTableID>
+<keyObject>CAB07746-81FF-5EC6-ED97-D24F8464B87C</keyObject>
+<referredKeyID>CAB07746-81FF-5EC6-ED97-D24F8464B87C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>slotid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ticket_slottable_fk" directorySegmentName="seg_0" id="EE84A819-212B-11E0-44B0-9BC6F6149833">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>14665432-B38F-CF8F-7547-1673A9B56F80</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<sourcePk>0E3E2730-D9B3-4542-03C1-08906BAB68A8</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9012AD8E-9435-6D2B-76AB-8CB023225997</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0B6B6301-D509-375C-956E-71A649624E31</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

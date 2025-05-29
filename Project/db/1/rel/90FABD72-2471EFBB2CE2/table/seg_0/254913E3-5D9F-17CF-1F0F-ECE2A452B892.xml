@@ -1,0 +1,235 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="254913E3-5D9F-17CF-1F0F-ECE2A452B892" name="ticket_audit">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>9062598D-DC19-43F3-0646-7B11D7AB3FB5</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="audit_id" id="4CDBE6C9-C4E9-3394-29CD-8F7D7A622965">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>BEFA3223-085B-26FF-62F7-BE36BBD9EA86</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1A7737EF-D000-EF48-0794-8D86184D71DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="operation_type" id="4A9EA553-FF6B-DC55-5578-6D1D3CF76F96">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>6CC3C667-08F1-C509-6807-CD51F257DE4B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>216B5C8B-877F-2856-927F-826177B2F86F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ticketid" id="B269768A-6009-1DCF-5B49-F0F9B9E739DC">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>6D8D7380-ED76-172C-4E2D-59E842EE91A9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="old_price" id="B74ECB75-8EC1-F46F-88A8-FBE06CBCB1CB">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>D04E9216-5812-0139-2E89-CB4C5D9F2622</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="new_price" id="EC92DF0D-DF8D-60F1-882A-B98AC6594007">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>2A0162C7-A148-2305-2C23-76F5BB26B5BB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="old_buyingdate" id="6E77AEB8-430A-A960-A7F9-8983359F64D9">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>23E53C79-90CB-0F3B-9DFB-766458E01C42</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>096CB8A9-99B8-84ED-24C0-4A69CE9BDFEB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="new_buyingdate" id="A04C376F-D382-B2B0-000E-B13448CC82E3">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>624CD3D3-4A4C-BAC3-E4CE-EC2F88D73196</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>096CB8A9-99B8-84ED-24C0-4A69CE9BDFEB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="old_id" id="FFAA20A8-CCE0-ABF6-9115-76BE926EC34C">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>704DD996-BE3B-A24C-87F7-38C42B122FF2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="new_id" id="2E731F43-602E-1387-3BBD-FBBB84E62C1C">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>C230DC73-9F4F-5CBD-AB99-2148A633833D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="old_slotid" id="C2647B0C-691C-F4DC-39DE-D3B13F8CA5AA">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>6A0140E0-3D04-830D-85F6-D8BB054B64F5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="new_slotid" id="31DE8BE6-FE1B-DF7F-85D9-D7B50348ED7E">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>DC2BB98F-BC3D-EA40-3F67-156FEF352242</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DA81C244-25F5-86EB-AA2F-0EFAD4683A9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="performed_by" id="DB602405-6180-466A-E8C6-07ADACF54343">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>D15BF4B3-9088-DD20-69EC-51A95C4DC8AA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="operation_time" id="98B8F777-2E61-10F6-3F64-07D5377C1555">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>6C4C10F7-05B3-BB5A-F489-DC21E3EC75CB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<domain>CDC0C9E0-B891-D0B0-9234-8556146060DC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_ip_address" id="24599B52-3D7E-FC4F-A6ED-225714323740">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>FF9A49D1-A074-95B5-415D-286E93216FF5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="session_user" id="4F16AC33-EFF5-24AD-B7EA-DF727E54ACFA">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>D2E65418-661C-DA23-34A8-B9078404A8D9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="host_name" id="9BB02B36-9983-0F45-CAE0-FF421F5FA974">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>8EF1717C-F6F1-C4E0-CED5-67ACFAD850C1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7824EBD-C834-F188-AE58-C37EF1CF364C" name="ticket_audit_PK">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>45AE8F28-335E-9121-D296-E028F4E56DD4</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CDBE6C9-C4E9-3394-29CD-8F7D7A622965"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

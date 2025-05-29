@@ -1,0 +1,261 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AD58C873-06E5-D420-7411-D82553FB3318" name="halltable_audit">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>E34B2C18-2FF3-E0DE-E9B7-A385D57D836E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="audit_id" id="E1EEB6E4-D235-5C13-1E97-0D3799A00CD0">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>281933BF-1F2C-2D4F-29B6-A0AD345285FA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1A7737EF-D000-EF48-0794-8D86184D71DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hallid" id="75328A00-2595-62B5-E199-A7565CBAAD7C">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>052C78F5-2D26-651F-3ED1-38CE3DF3AFFA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1A7737EF-D000-EF48-0794-8D86184D71DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="operation_type" id="5E2E570A-9FA6-3E57-6260-B3066D038A86">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>63225C97-BBE6-973A-635D-398AFDE0DA53</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>216B5C8B-877F-2856-927F-826177B2F86F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="old_hallname" id="71C41619-42D5-E42D-8870-79919F3FF137">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>34129C99-8A39-7EF0-739C-9A6FF6D5C69F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="new_hallname" id="C78BF2F2-01B0-AACF-951E-6DC686F0F69D">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>09BBE3DE-C410-4BCC-0A40-EDE7B9166606</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="old_location" id="06F35FA9-26C6-FAD3-871A-53B04274724A">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>DC81D5B1-E609-EA14-FE65-FDFAC6FCEA3D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>216B5C8B-877F-2856-927F-826177B2F86F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="new_location" id="F61B159C-D9FF-E502-6685-2731023386DC">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>46C50912-C518-F248-1ED6-3D58EB86B416</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>216B5C8B-877F-2856-927F-826177B2F86F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="old_rating" id="E25BE01C-657F-3CDA-75F3-BB7624B8DE38">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>A4EDD1E0-7BF3-67EC-83D0-1503F144F802</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1A7737EF-D000-EF48-0794-8D86184D71DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="new_rating" id="093A7BA7-4532-EC4D-0627-8E95C9B12A33">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>6FB64303-AF57-EEE5-297E-963CE3361E6D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1A7737EF-D000-EF48-0794-8D86184D71DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="old_type" id="5CA2061F-4870-C984-342C-C69D84B9DF56">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>F85D72AF-AB6E-8DD4-6636-C6211D895660</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="new_type" id="6DCB046E-9A17-B63C-D4C3-FEE913BAE59D">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>C6047D20-E246-3AAF-16FC-70CF0AAE3227</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="old_capsity" id="6B68AB46-5516-B814-1D6C-43232C1FAA44">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>D7B39F40-F159-C902-8EA3-4736A00E71F2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1A7737EF-D000-EF48-0794-8D86184D71DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="new_capsity" id="F0ADAC58-ED9C-38E9-38B3-4693F9CD60CA">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>AF45F5D7-14DD-19FF-6DD5-1DAD906C0A82</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>1A7737EF-D000-EF48-0794-8D86184D71DB</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="performed_by" id="9BA27567-8375-5BF5-3AEF-1DD0E5C70B6C">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>51461ED8-6CF7-E608-8897-D4983BE7CC8B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="operation_time" id="7326EA93-4426-EA15-3B30-9EC0E76AA466">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>BB4A0D68-87C6-8B12-0421-44D182BCA7B1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<domain>CDC0C9E0-B891-D0B0-9234-8556146060DC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_ip_address" id="E5B12A59-8DE4-7329-E0DD-C937941451E8">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>4923CDED-C53D-E216-6F0B-8FF80CE63B59</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="session_user" id="04A191C5-E971-EB13-3142-2415EF89EEA3">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>2C59B926-DEBC-028C-A51C-E37EFFECB4A2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="host_name" id="02ACC636-5F16-F073-F422-DA5B118CCC96">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>5DE54101-E347-C2B1-7A88-1F14C48FE8E1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2ABBD1AB-92AC-2375-94D4-0B3DFA885EAA</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5CAF54F4-DC6D-F46E-3F8B-1141F93A7CD3" name="halltable_audit_PK">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>9F98FC00-F963-ED0E-090E-033ED39AEA18</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1EEB6E4-D235-5C13-1E97-0D3799A00CD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

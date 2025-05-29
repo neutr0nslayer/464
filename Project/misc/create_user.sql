@@ -10,6 +10,7 @@ GRANT SELECT, INSERT, UPDATE ON C##CSE464.seattable TO C##ticket_user;
 GRANT SELECT, INSERT, UPDATE ON C##CSE464.slottable TO C##ticket_user;
 GRANT SELECT, INSERT, UPDATE ON C##CSE464.ticket TO C##ticket_user;
 GRANT SELECT, INSERT, UPDATE ON C##CSE464.usertable TO C##ticket_user;
+GRANT SELECT, INSERT, UPDATE ON C##CSE464.ratingtable TO C##ticket_user;
 grant select on user_role to C##ticket_user;
 grant select on user_role to C##CSE464;
 
@@ -46,5 +47,9 @@ INSERT INTO user_role (id, username, role) VALUES (2, 'C##user1', 'admin');
 INSERT INTO user_role (id, username, role) VALUES (3, 'C##user2', 'admin');
 UPDATE user_role SET username = 'C##USER1' WHERE id = 2;
 UPDATE user_role SET username = 'C##USER2' WHERE id = 3;
+
+update user_role set role = 'admin' where id = 1;
+UPDATE user_role SET role = 'user' WHERE id = 2;
+UPDATE user_role SET role = 'user' WHERE id = 3;
+UPDATE user_role SET username = 'C##CSE464' WHERE id = 1;
 commit;
-SELECT * FROM sys.user_role;

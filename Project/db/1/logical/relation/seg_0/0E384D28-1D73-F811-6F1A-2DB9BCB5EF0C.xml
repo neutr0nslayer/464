@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="slottable_movietable_fk" directorySegmentName="seg_0" id="0E384D28-1D73-F811-6F1A-2DB9BCB5EF0C">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:50:08 UTC</createdTime>
+<generatorID>FC4D6523-9800-D903-44C5-1C302E0975C6</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<engineerTo>
+<item key="90FABD72-8704-3DA4-CC04-2471EFBB2CE2" value="true"/>
+<item key="88968A1E-9479-F25B-157E-2D036F776117" value="true"/>
+</engineerTo>
+<sourcePk>2DB77DC5-1439-9BC3-1FE7-216E285710C8</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FE1D3F1C-0C56-494E-AC95-9F67BC647FE6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9012AD8E-9435-6D2B-76AB-8CB023225997</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

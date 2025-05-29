@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FC4D6523-9800-D903-44C5-1C302E0975C6" containerWithKeyObject="EA53D8FB-519A-89AD-2622-1E314F91C5A1" localFKIndex="6316922A-4CD5-2F86-2DAF-DAFAC8ED9BD2" name="slottable_movietable_FK">
+<sourceDDLFile>prov_v2.ddl</sourceDDLFile>
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:45:23 UTC</createdTime>
+<ownerDesignName>1</ownerDesignName>
+<importedID>98E7E689-6CFB-E61A-CA90-9FC396226EA1</importedID>
+<referredTableLongName>movietable</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>357A163A-2064-27EF-D7FB-07319B2B216C</referredTableID>
+<keyObject>8FC98691-D956-E814-6284-174A72BFCC97</keyObject>
+<referredKeyID>8FC98691-D956-E814-6284-174A72BFCC97</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>movieid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

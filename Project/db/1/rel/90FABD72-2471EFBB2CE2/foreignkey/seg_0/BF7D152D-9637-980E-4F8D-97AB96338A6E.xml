@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BF7D152D-9637-980E-4F8D-97AB96338A6E" containerWithKeyObject="E1B73BA8-4B3F-9740-4AD7-A5E1240BF9D7" localFKIndex="FE0351EF-F974-BDDE-5255-2712D56202A9" name="ratingtable_ticket_FK">
+<createdBy>neutr0nslayer</createdBy>
+<createdTime>2025-05-29 15:53:52 UTC</createdTime>
+<generatorID>711E3DDC-FBFF-3335-DA01-4B4D2FEE49FF</generatorID>
+<ownerDesignName>1</ownerDesignName>
+<referredTableLongName>ticket</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C449EE15-E969-3351-FA52-BEF12AFFE9EF</referredTableID>
+<keyObject>C8F0A762-0B3C-EFDF-0E47-B7557BF2FDC0</keyObject>
+<referredKeyID>C8F0A762-0B3C-EFDF-0E47-B7557BF2FDC0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ticketid</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

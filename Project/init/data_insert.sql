@@ -1,26 +1,26 @@
 -- Insert into halltable
-INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (1, 'Grand Regal Hall', 'New York', 9, 'IMAX', 250);
-INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (2, 'Sunset Cineplex', 'Los Angeles', 8, 'Standard', 180);
-INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (3, 'Ocean View Hall', 'Miami', 7, '4DX', 120);
-INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (4, 'Mountain Peak Hall', 'Denver', 8, 'Standard', 150);
-INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (5, 'City Lights Theater', 'Chicago', 9, 'IMAX', 200);
-INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (6, 'Skyline Arena', 'Seattle', 7, 'Dolby', 175);
-INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (7, 'Golden Reel Theater', 'San Francisco', 9, 'Standard', 160);
-INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (8, 'Riverfront Cinemas', 'Boston', 8, 'IMAX', 190);
-INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (9, 'Downtown Screens', 'Houston', 7, 'Standard', 140);
-INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (10, 'Lakeside Multiplex', 'Minneapolis', 8, '4DX', 130);
+INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (1, 'Grand Regal Hall', 'New York', 0, 'IMAX', 250);
+INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (2, 'Sunset Cineplex', 'Los Angeles', 0, 'Standard', 180);
+INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (3, 'Ocean View Hall', 'Miami', 0, '4DX', 120);
+INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (4, 'Mountain Peak Hall', 'Denver', 0, 'Standard', 150);
+INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (5, 'City Lights Theater', 'Chicago', 0, 'IMAX', 200);
+INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (6, 'Skyline Arena', 'Seattle', 0, 'Dolby', 175);
+INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (7, 'Golden Reel Theater', 'San Francisco', 0, 'Standard', 160);
+INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (8, 'Riverfront Cinemas', 'Boston', 0, 'IMAX', 190);
+INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (9, 'Downtown Screens', 'Houston', 0, 'Standard', 140);
+INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (10, 'Lakeside Multiplex', 'Minneapolis', 0, '4DX', 130);
 
 -- Insert into movietable
-INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (1, 'Inception', TO_DATE('2010-07-16', 'YYYY-MM-DD'), 'Sci-Fi', 8.8, 'PG-13', 'inception.jpg');
-INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (2, 'The Dark Knight', TO_DATE('2008-07-18', 'YYYY-MM-DD'), 'Action', 9.0, 'PG-13', 'dark_knight.jpg');
-INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (3, 'La La Land', TO_DATE('2016-12-09', 'YYYY-MM-DD'), 'Musical', 8.0, 'PG-13', 'la_la_land.jpg');
-INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (4, 'Titanic', TO_DATE('1997-12-19', 'YYYY-MM-DD'), 'Romance', 7.8, 'PG-13', 'titanic.jpg');
-INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (5, 'Avengers: Endgame', TO_DATE('2019-04-26', 'YYYY-MM-DD'), 'Action', 8.4, 'PG-13', 'endgame.jpg');
-INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (6, 'The Godfather', TO_DATE('1972-03-24', 'YYYY-MM-DD'), 'Crime', 9.2, 'R', 'godfather.jpg');
-INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (7, 'Interstellar', TO_DATE('2014-11-07', 'YYYY-MM-DD'), 'Sci-Fi', 8.6, 'PG-13', 'interstellar.jpg');
-INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (8, 'Parasite', TO_DATE('2019-05-30', 'YYYY-MM-DD'), 'Thriller', 8.6, 'R', 'parasite.jpg');
-INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (9, 'Joker', TO_DATE('2019-10-04', 'YYYY-MM-DD'), 'Drama', 8.5, 'R', 'joker.jpg');
-INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (10, 'The Matrix', TO_DATE('1999-03-31', 'YYYY-MM-DD'), 'Sci-Fi', 8.7, 'R', 'matrix.jpg');
+INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (1, 'Inception', TO_DATE('2010-07-16', 'YYYY-MM-DD'), 'Sci-Fi', 0, 'PG-13', 'inception.jpg');
+INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (2, 'The Dark Knight', TO_DATE('2008-07-18', 'YYYY-MM-DD'), 'Action', 0, 'PG-13', 'dark_knight.jpg');
+INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (3, 'La La Land', TO_DATE('2016-12-09', 'YYYY-MM-DD'), 'Musical', 0, 'PG-13', 'la_la_land.jpg');
+INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (4, 'Titanic', TO_DATE('1997-12-19', 'YYYY-MM-DD'), 'Romance', 0, 'PG-13', 'titanic.jpg');
+INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (5, 'Avengers: Endgame', TO_DATE('2019-04-26', 'YYYY-MM-DD'), 'Action', 0, 'PG-13', 'endgame.jpg');
+INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (6, 'The Godfather', TO_DATE('1972-03-24', 'YYYY-MM-DD'), 'Crime', 0, 'R', 'godfather.jpg');
+INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (7, 'Interstellar', TO_DATE('2014-11-07', 'YYYY-MM-DD'), 'Sci-Fi', 0, 'PG-13', 'interstellar.jpg');
+INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (8, 'Parasite', TO_DATE('2019-05-30', 'YYYY-MM-DD'), 'Thriller', 0, 'R', 'parasite.jpg');
+INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (9, 'Joker', TO_DATE('2019-10-04', 'YYYY-MM-DD'), 'Drama', 0, 'R', 'joker.jpg');
+INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (10, 'The Matrix', TO_DATE('1999-03-31', 'YYYY-MM-DD'), 'Sci-Fi', 0, 'R', 'matrix.jpg');
 
 -- Insert into usertable
 INSERT INTO usertable (id, email, password, name) VALUES (1, 'user1@example.com', 'pass1', 'User1');
@@ -136,10 +136,7 @@ INSERT INTO ticket (ticketid, price, buyingdate, usertable_id, slottable_slotid)
 COMMIT;
 
 
-CREATE TABLE seattable (
-    seatno          INTEGER,
-    ticket_ticketid NUMBER NOT NULL
-);
+-- Insert into seattable
 INSERT INTO seattable (seatno, ticket_ticketid) VALUES (1, 1);
 INSERT INTO seattable (seatno, ticket_ticketid) VALUES (5, 1);
 INSERT INTO seattable (seatno, ticket_ticketid) VALUES (6, 1);
