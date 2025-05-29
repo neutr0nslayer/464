@@ -1,8 +1,8 @@
 import streamlit as st
 import cx_Oracle
 import pandas as pd
-st.set_page_config(layout="wide")
 
+st.set_page_config(page_title="Tickt Dashboard", layout="wide")
 # Initialize session variables
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
