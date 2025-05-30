@@ -1,3 +1,6 @@
+
+-- Trigger to audit changes on slottable
+-- This trigger captures all changes (INSERT, UPDATE, DELETE) on the slottable
 CREATE OR REPLACE TRIGGER trg_slottable_audit
 AFTER INSERT OR UPDATE OR DELETE ON slottable
 FOR EACH ROW
