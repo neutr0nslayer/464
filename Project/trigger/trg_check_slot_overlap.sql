@@ -1,30 +1,50 @@
 CREATE OR REPLACE TRIGGER trg_check_slot_overlap
-BEFORE INSERT OR UPDATE ON slottable
-FOR EACH ROW
-DECLARE
-    v_existing_count NUMBER;
+FOR UPDATE OR INSERT ON slottable
+COMPOUND TRIGGER
+
+  TYPE slot_info_t IS RECORD (
+    hallid    slottable.halltable_hallid%TYPE,
+    slot_date slottable."date"%TYPE,
+    slot_time slottable.slot%TYPE,
+    slotid    slottable.slotid%TYPE
+  );
+
+  TYPE slot_info_table_t IS TABLE OF slot_info_t;
+
+  affected_slots slot_info_table_t := slot_info_table_t();
+
+  BEFORE EACH ROW IS
+  BEGIN
+    affected_slots.EXTEND;
+    affected_slots(affected_slots.COUNT).hallid := :NEW.halltable_hallid;
+    affected_slots(affected_slots.COUNT).slot_date := :NEW."date";
+    affected_slots(affected_slots.COUNT).slot_time := :NEW.slot;
+    affected_slots(affected_slots.COUNT).slotid := NVL(:NEW.slotid, -1);
+  END BEFORE EACH ROW;
+
+  AFTER STATEMENT IS
     v_new_start TIMESTAMP;
     v_new_end TIMESTAMP;
-    v_existing_start TIMESTAMP;
-    v_existing_end TIMESTAMP;
-BEGIN
-    v_new_start := TO_TIMESTAMP(:NEW."date" || ' ' || :NEW.slot, 'YYYY-MM-DD HH24:MI');
-    v_new_end := v_new_start + INTERVAL '2' HOUR;
+    v_conflict_count INTEGER;
+  BEGIN
+    FOR i IN 1 .. affected_slots.COUNT LOOP
+      v_new_start := TO_TIMESTAMP(affected_slots(i).slot_date || ' ' || affected_slots(i).slot_time, 'YYYY-MM-DD HH24:MI');
+      v_new_end := v_new_start + INTERVAL '2' HOUR;
 
-    SELECT COUNT(*)
-    INTO v_existing_count
-    FROM slottable
-    WHERE halltable_hallid = :NEW.halltable_hallid
-      AND "date" = :NEW."date"
-      AND slotid != NVL(:NEW.slotid, -1)  
-      AND (
-          TO_TIMESTAMP("date" || ' ' || slot, 'YYYY-MM-DD HH24:MI') < v_new_end
-          AND
-          (TO_TIMESTAMP("date" || ' ' || slot, 'YYYY-MM-DD HH24:MI') + INTERVAL '2' HOUR) > v_new_start
-      );
+      SELECT COUNT(*)
+      INTO v_conflict_count
+      FROM slottable s
+      WHERE s.halltable_hallid = affected_slots(i).hallid
+        AND s."date" = affected_slots(i).slot_date
+        AND s.slotid != affected_slots(i).slotid
+        AND TO_TIMESTAMP(s."date" || ' ' || s.slot, 'YYYY-MM-DD HH24:MI') < v_new_end
+        AND (TO_TIMESTAMP(s."date" || ' ' || s.slot, 'YYYY-MM-DD HH24:MI') + INTERVAL '2' HOUR) > v_new_start;
 
-    IF v_existing_count > 0 THEN
+      IF v_conflict_count > 0 THEN
         RAISE_APPLICATION_ERROR(-20001, 'Slot overlaps with an existing slot in this hall on the same date.');
-    END IF;
-END;
+      END IF;
+    END LOOP;
+  END AFTER STATEMENT;
+
+END trg_check_slot_overlap;
 /

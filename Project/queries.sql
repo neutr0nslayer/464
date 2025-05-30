@@ -71,3 +71,17 @@ COMMIT;
 
 
 SELECT column_name FROM all_tab_columns WHERE table_name = 'SLOTTABLE' AND owner = 'C##CSE464';
+DESC C##CSE464.AUDIT_RATINGTABLE;
+
+
+update  seattable set seatno = 1 
+where ticket_ticketid = 31 and seattable.SEATNO = 15;
+commit;
+
+update SLOTTABLE set SLOTTABLE.HALLTABLE_HALLID = 10
+where SLOTTABLE.SLOTID = 26;
+commit;
+
+update SLOTTABLE set SLOTTABLE.price = 100
+where SLOTTABLE.SLOTID = 26;
+COMMIT;
