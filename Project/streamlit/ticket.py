@@ -232,10 +232,9 @@ elif page == "My Tickets":
                         cursor.execute("""
                             INSERT INTO C##CSE464.ratingtable (rating_id, movie_rating, hall_ratting, ticket_ticketid)
                             VALUES (
-                                (SELECT NVL(MAX(rating_id), 0) + 1 FROM C##CSE464.ratingtable),
-                                :1, :2, :3
+                                :1, :2, :3, :4
                             )
-                        """, (movie_rating, hall_rating, int(ticket['TICKETID'])))
+                        """, (int(ticket['TICKETID']), movie_rating, hall_rating, int(ticket['TICKETID'])))
                         conn.commit()
                         conn.close()
                         st.success(f"Rating submitted for Ticket ID {ticket['TICKETID']}")

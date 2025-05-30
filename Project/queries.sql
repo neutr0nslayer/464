@@ -68,3 +68,6 @@ SELECT ROUND(AVG(movie_rating), 1)
 );
 SELECT * FROM trigger_log;
 COMMIT;
+
+
+SELECT column_name FROM all_tab_columns WHERE table_name = 'SLOTTABLE' AND owner = 'C##CSE464';
