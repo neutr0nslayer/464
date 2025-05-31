@@ -9,6 +9,7 @@ INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUE
 INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (8, 'Riverfront Cinemas', 'Boston', 0, 'IMAX', 190);
 INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (9, 'Downtown Screens', 'Houston', 0, 'Standard', 140);
 INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (10, 'Lakeside Multiplex', 'Minneapolis', 0, '4DX', 130);
+INSERT INTO halltable (hallid, hallname, location, rating, type, capasity) VALUES (11, 'CineMagic Hall', 'New York', 0, 'Dolby', 165);
 
 -- Insert into movietable
 INSERT INTO movietable (movieid, moviename, releasedate, genre, movierating, rating, poster) VALUES (1, 'Inception', TO_DATE('2010-07-16', 'YYYY-MM-DD'), 'Sci-Fi', 0, 'PG-13', 'inception.jpg');

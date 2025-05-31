@@ -85,3 +85,7 @@ commit;
 update SLOTTABLE set SLOTTABLE.price = 100
 where SLOTTABLE.SLOTID = 26;
 COMMIT;
+
+update C##CSE464.ticket set slottable_slotid = 192
+where ticket.ticketid = 109;
+commit;

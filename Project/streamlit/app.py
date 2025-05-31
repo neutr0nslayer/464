@@ -83,26 +83,31 @@ def show_custom_table():
             st.error(f"Error executing query: {e}")
 
 # === MOVIE SLOT INFO ===
-import streamlit as st
-import pandas as pd
-import altair as alt
-
 def show_movie_slots():
     st.title("🎬 Movie Slot Info")
     try:
         cursor = st.session_state.connection.cursor()
+
+        # Fetch movies
         cursor.execute("SELECT DISTINCT moviename FROM C##CSE464.movietable ORDER BY moviename")
         movie_names = ["All Movies"] + [row[0] for row in cursor.fetchall()]
 
+        # Fetch halls
         cursor.execute("SELECT DISTINCT hallname FROM C##CSE464.halltable ORDER BY hallname")
         hall_names = ["All Halls"] + [row[0] for row in cursor.fetchall()]
+
+        # Fetch hall locations
+        cursor.execute("SELECT DISTINCT location FROM C##CSE464.halltable ORDER BY location")
+        hall_locations = ["All Locations"] + [row[0] for row in cursor.fetchall()]
 
         with st.form("slot_form"):
             selected_movie = st.selectbox("Movie", movie_names)
             selected_hall = st.selectbox("Hall", hall_names)
+            selected_location = st.selectbox("Hall Location", hall_locations)
+
             col1, col2 = st.columns(2)
             with col1:
-                enable_start = st.checkbox("Filter by Start Date") 
+                enable_start = st.checkbox("Filter by Start Date")
                 start_date = st.date_input("Start Date") if enable_start else None
             with col2:
                 enable_end = st.checkbox("Filter by End Date")
@@ -113,8 +118,15 @@ def show_movie_slots():
         if submitted:
             query = """
                 SELECT 
-                    s.slotid, m.moviename, s.slot, s."date" AS slot_date, 
-                    h.hallname, h.type AS hall_type, s.price,
+                    s.slotid, 
+                    m.moviename,
+                    m.genre AS movie_genre, 
+                    s.slot, 
+                    s."date" AS slot_date, 
+                    h.hallname, 
+                    h.location,
+                    h.type AS hall_type, 
+                    s.price,
                     COUNT(DISTINCT t.ticketid) AS tickets_sold,
                     COUNT(se.seatno) AS seats_sold,
                     COUNT(se.seatno) * s.price AS total_revenue
@@ -135,6 +147,9 @@ def show_movie_slots():
             if selected_hall != "All Halls":
                 filters.append("LOWER(h.hallname) = :hall_name")
                 params["hall_name"] = selected_hall.lower()
+            if selected_location != "All Locations":
+                filters.append("LOWER(h.location) = :location")
+                params["location"] = selected_location.lower()
             if start_date:
                 filters.append("s.\"date\" >= TO_DATE(:start_date, 'YYYY-MM-DD')")
                 params["start_date"] = start_date.strftime("%Y-%m-%d")
@@ -147,7 +162,7 @@ def show_movie_slots():
 
             query += """
                 GROUP BY 
-                    s.slotid, m.moviename, s.slot, s."date", h.hallname, h.type, s.price
+                    s.slotid, m.moviename, m.genre, s.slot, s."date", h.hallname, h.location, h.type, s.price
                 ORDER BY 
                     s."date", s.slot
             """
@@ -167,13 +182,13 @@ def show_movie_slots():
                 # Total Revenue Table
                 total_revenue_sum = df["TOTAL_REVENUE"].sum()
                 total_revenue_df = pd.DataFrame({
-                    "Total": ["Total Collection "],
+                    "Total": ["Total Collection"],
                     "Total Revenue": [total_revenue_sum]
                 })
                 st.markdown("### 💰 Total Revenue")
                 st.table(total_revenue_df)
 
-                # Chart
+                # Chart - Seats Sold per Month
                 df_chart = df.dropna(subset=['SLOT_DATE'])
                 df_chart['YEAR_MONTH'] = df_chart['SLOT_DATE'].dt.to_period('M').dt.to_timestamp()
 
@@ -189,8 +204,8 @@ def show_movie_slots():
                 )
 
                 st.altair_chart(chart, use_container_width=True)
-                
-                # Pie chart for seats sold by movie
+
+                # Pie chart - Seats Sold by Movie
                 seats_by_movie = df_chart.groupby('MOVIENAME')['SEATS_SOLD'].sum().reset_index()
 
                 pie_chart = alt.Chart(seats_by_movie).mark_arc().encode(
@@ -205,7 +220,6 @@ def show_movie_slots():
 
     except Exception as e:
         st.error(f"Error: {e}")
-
 
 # === ADD MOVIE ===
 def show_add_movie():
@@ -396,8 +410,7 @@ def show_movietable_audit():
             SELECT 
                 a.audit_id,
                 a.operation_type,
-                a.movieid,
-                m.moviename,
+                a.movieid,          
                 a.old_moviename,
                 a.new_moviename,
                 a.old_releasedate,
@@ -415,7 +428,6 @@ def show_movietable_audit():
                 a.session_user,
                 a.host_name
             FROM movietable_audit a
-            LEFT JOIN movietable m ON a.movieid = m.movieid
             WHERE 1=1
         """
         params = {}
@@ -1042,7 +1054,127 @@ def show_top_halls_by_seats_and_revenue():
 
     except Exception as e:
         st.error(f"Error loading top halls data: {e}")
+        
+        
+# Function to update seat number
+def get_seat_numbers_for_ticket(ticketid):
+    try:
+        cursor = st.session_state.connection.cursor()
+        cursor.execute("""
+            SELECT seatno FROM C##CSE464.seattable WHERE ticket_ticketid = :ticketid ORDER BY seatno
+        """, {"ticketid": ticketid})
+        seats = [row[0] for row in cursor.fetchall()]
+        return seats
+    except Exception as e:
+        st.error(f"Error fetching seats for ticket {ticketid}: {e}")
+        return []
 
+def update_seat_number(ticketid, old_seatno, new_seatno):
+    try:
+        cursor = st.session_state.connection.cursor()
+        cursor.callproc("update_seatno", [ticketid, old_seatno, new_seatno])
+        st.session_state.connection.commit()
+        st.success(f"Seat number updated successfully! Ticket ID: {ticketid}, Seat No: {old_seatno} → {new_seatno}")
+    except cx_Oracle.DatabaseError as e:
+        st.error(f"Error updating seat number: {e}")
+
+def show_update_seat_page():
+    st.title("Update Seat Number")
+
+    # Step 1: Input ticket id
+    ticketid = st.number_input("Ticket ID", min_value=1, step=1)
+
+    if ticketid:
+        # Step 2: Fetch seats dynamically for selected ticketid
+        seat_options = get_seat_numbers_for_ticket(ticketid)
+        
+        if seat_options:
+            old_seatno = st.selectbox("Old Seat Number", seat_options)
+            new_seatno = st.number_input("New Seat Number", min_value=1, step=1)
+
+            if st.button("Update Seat"):
+                if new_seatno == old_seatno:
+                    st.warning("New seat number must be different from old seat number.")
+                else:
+                    update_seat_number(ticketid, old_seatno, new_seatno)
+        else:
+            st.info("No seats found for this ticket ID.")      
+            
+            
+def call_update_movie_for_slot(slot_id, new_movie_id):
+    try:
+        cursor = st.session_state.connection.cursor()
+        cursor.callproc("update_movie_for_slot", [slot_id, new_movie_id])
+        st.session_state.connection.commit()
+        st.success(f"Movie updated for slot ID {slot_id} successfully.")
+    except Exception as e:
+        st.error(f"Error updating movie: {e}")
+
+def call_update_hall_for_slot(slot_id, new_hall_id):
+    try:
+        cursor = st.session_state.connection.cursor()
+        cursor.callproc("update_hall_for_slot", [slot_id, new_hall_id])
+        st.session_state.connection.commit()
+        st.success(f"Hall updated for slot ID {slot_id} successfully.")
+    except Exception as e:
+        st.error(f"Error updating hall: {e}")
+
+def show_update_slot_movie_hall():
+    st.title("Update Movie or Hall for Slot")
+
+    cursor = st.session_state.connection.cursor()
+
+    # Fetch all slot IDs with some info (date + slot time + hall name + movie name) for better context
+    cursor.execute("""
+        SELECT s.slotid, 
+               TO_CHAR(s."date", 'YYYY-MM-DD') AS slot_date, 
+               s.slot,
+               h.hallname,
+               m.moviename
+          FROM C##CSE464.slottable s
+          JOIN C##CSE464.halltable h ON s.halltable_hallid = h.hallid
+          JOIN C##CSE464.movietable m ON s.movietable_movieid = m.movieid
+          ORDER BY s."date" DESC, s.slot
+    """)
+    slots = cursor.fetchall()
+
+    if not slots:
+        st.info("No slots found.")
+        return
+
+    slot_display = [f"ID: {row[0]} - {row[1]} {row[2]} - Hall: {row[3]} - Movie: {row[4]}" for row in slots]
+    slot_dict = {display: row[0] for display, row in zip(slot_display, slots)}
+
+    selected_slot_display = st.selectbox("Select Slot", slot_display)
+    selected_slot_id = slot_dict[selected_slot_display]
+
+    # Fetch all movies for dropdown
+    cursor.execute("SELECT movieid, moviename FROM C##CSE464.movietable ORDER BY moviename")
+    movies = cursor.fetchall()
+    movie_display = [f"{row[1]} (ID: {row[0]})" for row in movies]
+    movie_dict = {display: row[0] for display, row in zip(movie_display, movies)}
+
+    # Fetch all halls for dropdown
+    cursor.execute("SELECT hallid, hallname FROM C##CSE464.halltable ORDER BY hallname")
+    halls = cursor.fetchall()
+    hall_display = [f"{row[1]} (ID: {row[0]})" for row in halls]
+    hall_dict = {display: row[0] for display, row in zip(hall_display, halls)}
+
+    st.subheader("Update Movie")
+    selected_movie_display = st.selectbox("Select New Movie", movie_display, key="new_movie")
+    if st.button("Update Movie for Slot"):
+        new_movie_id = movie_dict[selected_movie_display]
+        call_update_movie_for_slot(selected_slot_id, new_movie_id)
+
+    st.markdown("---")
+
+    st.subheader("Update Hall")
+    selected_hall_display = st.selectbox("Select New Hall", hall_display, key="new_hall")
+    if st.button("Update Hall for Slot"):
+        new_hall_id = hall_dict[selected_hall_display]
+        call_update_hall_for_slot(selected_slot_id, new_hall_id)
+                
+                
 if not st.session_state.logged_in:
     show_login()
 else:
@@ -1058,7 +1190,7 @@ else:
     # Main pages
     pages = ["Dashboard", "View Hall Table", "Run Custom Query", "Top Ticket Users"]
     if st.session_state.role == "admin":
-        pages += ["Movie Slot Info", "Add Movie", "Assign Slot"]
+        pages += ["Movie Slot Info", "Add Movie", "Assign Slot", "Update Seat Number", "Update Movie or Hall"]
 
     selected_page = st.sidebar.selectbox("Go to", pages, index=pages.index("Dashboard"))
     st.session_state.page = selected_page.replace(" ", "_").lower()
@@ -1107,3 +1239,7 @@ else:
         show_ticket_audit()
     elif page == "top_ticket_users":
         show_top_ticket_users()
+    elif page == "update_seat_number":
+        show_update_seat_page()
+    elif page == "update_movie_or_hall":
+        show_update_slot_movie_hall()
